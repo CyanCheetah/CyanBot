@@ -7,8 +7,9 @@ import time
 filename = 'img.bmp'
 subprocess.run(['sudo', 'fbi', '-T', '1', '-noverbose', '-a', '/home/robot/ev3/ha.bmp'])
 
-time.sleep(5)
+time.sleep(6)
 
 
 #To Run this program, in the ssh do: sudo python3 /home/robot/ev3/ev3/tests/code/Display.py
 #Or whatever the path of the pthon program is
+#test
