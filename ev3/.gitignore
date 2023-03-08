@@ -1,0 +1,12 @@
+__pycache__
+*.pyc
+*.swp
+*.log
+dist
+*.egg-info
+RELEASE-VERSION
+ev3dev2/version.py
+build
+_build/
+docs/_build/
+.idea
