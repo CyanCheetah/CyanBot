@@ -91,6 +91,34 @@ sudo apt-get install fswebcam
 
 We installed fswebcam!
 
+# Code File - Webcam.py
+
+We can run our first code file: [Webcam.py](https://github.com/CyanCheetah/EV3-Webcam/blob/ev3/ev3/tests/code/Webcam.py)
+
+This code file makes it so that when you hit the touch sensor, then it captures an image and saves it onto the EV3 brick.
+
+Make sure that the Touch Sensor is in the right port, to change it:
+
+```python
+from ev3dev2.sensor import INPUT_4
+```
+Change the input to whatever port number you have it to.
+
+Next up, here is the important command that saves the image:
+```python
+subprocess.call(['fswebcam', '-r', '100x100', '--no-banner', filename])
+```
+What this does is saves a 100x100 image onto the ev3 by the name of variable filename
+
+```python
+subprocess.call(['fswebcam', '-r', '100x100', '--no-banner', filename])
+```
+filename:
+```python
+filename = 'image-{}.jpg'.format(timestamp)
+```
+You can change the name if you want to. To access it, in VS Code in the ev3dev device browser, check code files it should be saved there.
+
 # Installation Guide - fbi (EV3 Display Library)
 
 
