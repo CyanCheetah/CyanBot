@@ -50,10 +50,12 @@ Once you made sure that you have Python installed, you are ready for the next st
 # Installation Guide - Visual Studio Code Extensions
 
 In the sidebar, go to the extensions tab and search up ev3dev-browser. 
+
 ![h](https://user-images.githubusercontent.com/91763642/229658655-f3eb5ec4-963e-4894-b44e-38362e8bc897.png)
 
 
 Once you have installed that, search up Python and install that. This helps by using Intellisense and debug code.
+
 ![infogg](https://user-images.githubusercontent.com/91763642/229658672-66ac76cb-9257-44ec-8e47-ddcf9289c1b7.png)
 
 
