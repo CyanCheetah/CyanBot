@@ -74,6 +74,17 @@ Once it is opened, there are a few things we might have to do.
 Make sure that the EV3 is in your VS Code
 ![nb](https://user-images.githubusercontent.com/91763642/229658842-dce1d6a5-a68b-4aa2-8657-b2daef63f635.png)
 
+# Installation Guide - FSWebcam
+
+We need to install fswebcam, a linux based webcam program.
+
+fswebcam allows us to access the webcam. First off, make sure you're ev3 is connected via usb and make sure usb webcam is supported by ev3 and plugged into usb port on ev3.
+
+Then in the ev3 ssh terminal, type in:
+```bash
+sudo apt-get update
+```
+
 
 
 
