@@ -118,6 +118,10 @@ filename:
 filename = 'image-{}.jpg'.format(timestamp)
 ```
 You can change the name if you want to. To access it, in VS Code in the ev3dev device browser, check code files it should be saved there.
+Usually in:
+```
+/home/robot/filename
+```
 
 # Installation Guide - fbi (EV3 Display Library)
 
@@ -138,9 +142,30 @@ We installed fbi!
 # Code File - Webcam Display
 
 Next up is Webcam Display. It basically is the same thing as Webcam but then it displays it. 
+
 WebcamDisplay.py: 
 [WebcamDisplay.py](https://github.com/CyanCheetah/EV3-Webcam/blob/ev3/ev3/tests/code/WebcamDisplay.py)
 
+Same thing as Webcam, make sure your touch sensor is in correct port. 
 
+Displays it as:
+```bash
+subprocess.run(['sudo', 'fbi', '-T', '1', '-noverbose', '-a', '/home/robot/image.bmp'])
+```
+
+Here is an example:
+
+![f](https://user-images.githubusercontent.com/91763642/229664976-d3550151-50e8-47a4-aae4-75448fb8a11c.png)
+
+
+# Code File - Webcam Stream
+
+This is the WebcamStream program: [WebcamStream.py](https://github.com/CyanCheetah/EV3-Webcam/blob/ev3/ev3/tests/code/WebcamStream.py)
+
+This is super slow though don't keep you're hopes up.
+
+# Conclusion
+
+That's about it! Any questions, Discord: CyanCheetah#6013
 
 
