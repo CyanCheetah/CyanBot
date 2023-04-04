@@ -4,6 +4,20 @@ This is programming code for the Lego Mindstorms 31313 EV3 kit. Here I will show
 
 # Table of Contents
 
+* [Installation Guide - EV3DEV](https://github.com/CyanCheetah/EV3-Webcam#installation-guide---ev3dev)
+* [Installation Guide - Visual Studio Code](https://github.com/CyanCheetah/EV3-Webcam#installation-guide---visual-studio-code)
+* [Installation Guide - Python](https://github.com/CyanCheetah/EV3-Webcam#installation-guide---python)
+* [Installation Guide - Visual Studio Code Extensions](https://github.com/CyanCheetah/EV3-Webcam#installation-guide---visual-studio-code-extensions)
+* [Installation Guide - CyanBot code into Visual Studio Code](https://github.com/CyanCheetah/EV3-Webcam#installation-guide---cyanbot-code-into-visual-studio-code)
+* [Installation Guide - Making Sure EV3DEV is installed](https://github.com/CyanCheetah/EV3-Webcam#installation-guide---making-sure-ev3dev-is-installed)
+* [Installation Guide - fswebcam](https://github.com/CyanCheetah/EV3-Webcam#installation-guide---fswebcam)
+* [Code File - Webcam.py](https://github.com/CyanCheetah/EV3-Webcam#code-file---webcampy)
+* [Installation Guide - fbi (EV3 Display Library)](https://github.com/CyanCheetah/EV3-Webcam#installation-guide---fbi-ev3-display-library)
+* [Code File - Webcam Display](https://github.com/CyanCheetah/EV3-Webcam#code-file---webcam-display)
+* [Code File - Webcam Stream](https://github.com/CyanCheetah/EV3-Webcam#code-file---webcam-stream)
+* [Conclusion](https://github.com/CyanCheetah/EV3-Webcam#conclusion)
+
+
 # Installation Guide - EV3DEV
 
 First what you want to do is install EV3DEV onto your EV3. 
@@ -91,7 +105,7 @@ sudo apt-get install fswebcam
 
 We installed fswebcam!
 
-# Code File - Webcam.py
+# Code File - Webcam
 
 We can run our first code file: [Webcam.py](https://github.com/CyanCheetah/EV3-Webcam/blob/ev3/ev3/tests/code/Webcam.py)
 
