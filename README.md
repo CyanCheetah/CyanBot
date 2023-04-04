@@ -121,6 +121,26 @@ You can change the name if you want to. To access it, in VS Code in the ev3dev d
 
 # Installation Guide - fbi (EV3 Display Library)
 
+fbi allows us to get images onto ev3 screen
+
+```bash
+sudo apt-get update
+```
+
+Then
+
+```bash
+sudo apt-get install fbi
+```
+
+We installed fbi!
+
+# Code File - Webcam Display
+
+Next up is Webcam Display. It basically is the same thing as Webcam but then it displays it. 
+
+[WebcamDisplay.py](https://github.com/CyanCheetah/EV3-Webcam/blob/ev3/ev3/tests/code/WebcamDisplay.py)
+
 
 
 
