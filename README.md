@@ -74,7 +74,7 @@ Once it is opened, there are a few things we might have to do.
 Make sure that the EV3 is in your VS Code
 ![nb](https://user-images.githubusercontent.com/91763642/229658842-dce1d6a5-a68b-4aa2-8657-b2daef63f635.png)
 
-# Installation Guide - FSWebcam
+# Installation Guide - fswebcam
 
 We need to install fswebcam, a linux based webcam program.
 
@@ -84,6 +84,14 @@ Then in the ev3 ssh terminal, type in:
 ```bash
 sudo apt-get update
 ```
+Then to install fswebcam, run this command in the ssh terminal:
+```bash
+sudo apt-get install fswebcam
+```
+
+We installed fswebcam!
+
+# Installation Guide - fbi (EV3 Display Library)
 
 
 
