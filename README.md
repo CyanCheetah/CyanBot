@@ -138,7 +138,7 @@ We installed fbi!
 # Code File - Webcam Display
 
 Next up is Webcam Display. It basically is the same thing as Webcam but then it displays it. 
-
+WebcamDisplay.py: 
 [WebcamDisplay.py](https://github.com/CyanCheetah/EV3-Webcam/blob/ev3/ev3/tests/code/WebcamDisplay.py)
 
 
