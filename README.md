@@ -21,7 +21,6 @@ This is programming code for the Lego Mindstorms 31313 EV3 kit. Here I will show
 
 # Installation Guide - EV3DEV
 
-
 First what you want to do is install EV3DEV onto your EV3. 
 
 Here is a link to the official EV3DEV website:
