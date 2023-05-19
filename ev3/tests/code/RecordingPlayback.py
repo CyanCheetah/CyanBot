@@ -29,11 +29,9 @@ while True:
         recording_process.terminate()
         sound.speak('Recording stopped!')
         is_recording = False
-        break  # exit the loop
+        break  
 
     sleep(0.1)
-
-# Play the recorded audio file if the touch sensor is pressed again
 if ts.wait_for_pressed():
     subprocess.run(['sudo', 'service', 'udev', 'restart'])
     sound.speak('Playing recorded audio!')
@@ -41,3 +39,10 @@ if ts.wait_for_pressed():
 
     subprocess.Popen(cmd).wait()
 #sudo python3 /home/robot/ev3/ev3/tests/code/RecordingPlayback.py
+#brickrun -- /usr/bin/mplayer /home/robot/ev3/ezgif.com-resize.mp4
+#brickrun -- mpg123 -@ http://icecast.omroep.nl/radio1-bb-mp3 -b 2048
+#brickrun -- mpg123 -@ http://us3.streamingpulse.com:7015/live -b 100000
+#brickrun -- mpg123 -@ https://rfcmedia.streamguys1.com/MusicPulse.mp3 -b 2048
+
+
+

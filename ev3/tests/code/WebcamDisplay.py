@@ -18,9 +18,6 @@ screen.clear()
 sound.speak('Hello!')
 sound.speak('Click the Button to Capture an Image')
 screen.clear()
-screen.draw.text((0,0), 'Click the Button', font=fonts.load('ncenI24'))
-screen.draw.text((0,12), 'to capture', font=fonts.load('ncenI24'))
-screen.draw.text((0,24), 'an image', font=fonts.load('ncenI24'))
 
 while not btn.down:
     ts = TouchSensor(INPUT_4)

@@ -20,25 +20,20 @@ screen.clear()
 
 sound.speak('Hello! This is a streaming program. This will stream the photos to the ev3 screen.')
 
-
-
+# Function to capture an image using fswebcam
 def capture_image():
-    while not btn.down:
-        subprocess.call(['fswebcam', '-r', '50x50', '--no-banner', 'image.bmp'])
+    subprocess.call(['fswebcam', '-r', '160x120', '--no-banner', '/home/robot/image.jpeg'])
 
+# Function to display the image on the EV3 screen using mplayer
 
 def display_image():
-    while not btn.down:
-        subprocess.Popen(['sudo', 'fbi', '-T', '1', '-noverbose', '-a', '/home/robot/image.bmp'])
+    subprocess.call(['sudo', 'brickrun', '--', 'mplayer', '-vo', 'fbdev2:/dev/fb0', '-framedrop', '-nosound', '/home/robot/image.jpeg'])
 
-
+# Run the image capture and display processes
 if __name__ == '__main__':
-    p1 = Process(target=capture_image)
-    p2 = Process(target=display_image)
-    p1.start()
-    p2.start()
-    p1.join()
-    p2.join()
+    capture_image()
+    display_image()
+
 
 #To Run this program, in the ssh do: sudo python3 /home/robot/ev3/ev3/tests/code/WebcamDisplay.py
 #Or whatever the path of the pthon program is
