@@ -31,7 +31,6 @@ while True:
     screen.draw.text((0,12), 'an image', font=fonts.load('ncenI24'))
 
 
-
     ts = TouchSensor(INPUT_4)
     if ts.is_pressed:
         timestamp = time.strftime('%Y%m%d-%H%M%S')
