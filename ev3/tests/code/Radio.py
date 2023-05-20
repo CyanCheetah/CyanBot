@@ -33,6 +33,7 @@ for line in iter(process.stdout.readline, ''):
 # Close the subprocess
 process.stdout.close()
 process.wait()
+
 #sudo python3 /home/robot/ev3/ev3/tests/code/Radio.py
 # brickrun -- /home/robot/ev3/ev3/tests/code/Radio.py
 #brickrun -- mpg123 -l 1 --loop -1 -@ http://icecast.omroep.nl/radio1-bb-mp3 -b 1024
@@ -52,12 +53,18 @@ process.wait()
 #brickrun -- ffmpeg -i /home/robot/ev3/BadAppleSong.mp3 /home/robot/ev3/BadAppleSong.wav
 #brickrun -- mpg123 /home/robot/ev3/BadAppleSong.mp3 -b 10000
 #brickrun -- aplay /home/robot/ev3/BadAppleSong.wav
+#brickrun -- mplayer /home/robot/ev3/YLIA.gif
 
-
-#brickrun -- mplayer /home/robot/ev3/BadApple.mp4 -ao sdl -vo fbdev2:/dev/fb0 -autosync 5 -vfm ffmpeg -lavdopts lowres=1:fast:skiploopfilter=all -cache 16000 -nocache
+#brickrun -- mplayer /home/robot/ev3/BadApple.mp4 -vo fbdev2:/dev/fb0 
 #brickrun -- mplayer /home/robot/ev3/BadApple.mp4 -framedrop -vo fbdev2:/dev/fb0 -autosync 5
 #brickrun -- mplayer /home/robot/ev3/output_file.mp4 -framedrop -vo fbdev2:/dev/fb0 -autosync 5 -vfm ffmpeg -lavdopts lowres=1:fast:skiploopfilter=all -cache 16000 -nocache
 
-#brickrun -- mplayer /home/robot/ev3/BadApple.mp4 -vo fbdev2:/dev/fb0 -autosync 100
+#brickrun -- mplayer /home/robot/ev3/BadApple3.mpeg -vo fbdev2:/dev/fb0 -autosync 5
 #ffmpeg -i /home/robot/ev3/BadAppleSong.wav -ac 1 -ar 16000 /home/robot/ev3/output.wav
 #ffmpeg -i /home/robot/ev3/BadApple.mp4 -i /home/robot/ev3/BadAppleSong.wav -c:v copy -c:a copy /home/robot/ev3/output_file.mp4
+
+
+#brickrun -- mplayer -vo fbdev2:/dev/fb0 -ao sdl /home/robot/ev3/YLIA.gif -loop 0 & brickrun -- mplayer -ao sdl /home/robot/ev3/.mp3
+#brickrun -- mplayer /home/robot/ev3/output_file.mp4 -vo fbdev2:/dev/fb0 -lavdopts lowres=1 -noborder -nomouseinput -quiet
+#brickrun -- ffmpeg -i /home/robot/ev3/BadApple.mp4 -vf "fps=10,scale=178:128:flags=lanczos" /home/robot/ev3/BadApple.gif
+
