@@ -59,7 +59,7 @@ process.wait()
 #brickrun -- mplayer /home/robot/ev3/BadApple.mp4 -framedrop -vo fbdev2:/dev/fb0 -autosync 5
 #brickrun -- mplayer /home/robot/ev3/output_file.mp4 -framedrop -vo fbdev2:/dev/fb0 -autosync 5 -vfm ffmpeg -lavdopts lowres=1:fast:skiploopfilter=all -cache 16000 -nocache
 
-#brickrun -- mplayer /home/robot/ev3/BadApple3.mpeg -vo fbdev2:/dev/fb0 -autosync 5
+#brickrun -- mplayer /home/robot/ev3/BadApple2.mpg -vo fbdev2:/dev/fb0 -autosync 5
 #ffmpeg -i /home/robot/ev3/BadAppleSong.wav -ac 1 -ar 16000 /home/robot/ev3/output.wav
 #ffmpeg -i /home/robot/ev3/BadApple.mp4 -i /home/robot/ev3/BadAppleSong.wav -c:v copy -c:a copy /home/robot/ev3/output_file.mp4
 
