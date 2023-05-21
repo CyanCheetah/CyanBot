@@ -58,13 +58,15 @@ process.wait()
 #brickrun -- mplayer /home/robot/ev3/BadApple.mp4 -vo fbdev2:/dev/fb0 
 #brickrun -- mplayer /home/robot/ev3/BadApple.mp4 -framedrop -vo fbdev2:/dev/fb0 -autosync 5
 #brickrun -- mplayer /home/robot/ev3/output_file.mp4 -framedrop -vo fbdev2:/dev/fb0 -autosync 5 -vfm ffmpeg -lavdopts lowres=1:fast:skiploopfilter=all -cache 16000 -nocache
-
+#brickrun -- mplayer /home/robot/ev3/BadApple.mp4 -vo fbdev2:/dev/fb0 -autosync 5
 #brickrun -- mplayer /home/robot/ev3/BadApple2.mpg -vo fbdev2:/dev/fb0 -autosync 5
 #ffmpeg -i /home/robot/ev3/BadAppleSong.wav -ac 1 -ar 16000 /home/robot/ev3/output.wav
 #ffmpeg -i /home/robot/ev3/BadApple.mp4 -i /home/robot/ev3/BadAppleSong.wav -c:v copy -c:a copy /home/robot/ev3/output_file.mp4
+#brickrun -- mplayer /home/robot/ev3/Y2Mate_1.mpg -vo fbdev2:/dev/fb0 -autosync 5
 
 
 #brickrun -- mplayer -vo fbdev2:/dev/fb0 -ao sdl /home/robot/ev3/YLIA.gif -loop 0 & brickrun -- mplayer -ao sdl /home/robot/ev3/.mp3
 #brickrun -- mplayer /home/robot/ev3/output_file.mp4 -vo fbdev2:/dev/fb0 -lavdopts lowres=1 -noborder -nomouseinput -quiet
 #brickrun -- ffmpeg -i /home/robot/ev3/BadApple.mp4 -vf "fps=10,scale=178:128:flags=lanczos" /home/robot/ev3/BadApple.gif
 
+#brickrun -- mplayer -fps 15 -demuxer lavf -lavfdopts format=mjpeg -vo fbdev2:/dev/fb0 -quiet /home/robot/webcam.jpg
