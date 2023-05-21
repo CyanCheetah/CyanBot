@@ -1,41 +1,36 @@
 #!/usr/bin/env python3
 
-import time
-import ev3dev2.auto as ev3
-import ev3dev2.fonts as fonts
+# import subprocess
+# import os
+
+# image_path = '/home/robot/capture.bmp'  # Path to store the captured image
+
+# def capture_image():
+#     subprocess.run(['fswebcam', '-r', '160x90', '--no-banner', image_path])
+
+# def display_image():
+#     subprocess.Popen(['brickrun','mplayer', '-vo', 'fbdev2:/dev/fb0', '-framedrop', '-quiet', image_path])
+
+# while True:
+#     capture_image()
+#     display_image()
 import subprocess
-from ev3dev2.motor import LargeMotor, OUTPUT_A, OUTPUT_B, SpeedPercent, MoveTank
-from ev3dev2.sensor import INPUT_4
-from ev3dev2.sensor.lego import TouchSensor
-from ev3dev2.led import Leds
-from ev3dev2.sound import Sound
-from ev3dev2.button import Button
-from multiprocessing import Process
+import os
 
-btn = Button()
-sound = Sound()
-screen = ev3.Display()
-screen.clear()
+image_path = '/home/robot/capture.bmp'  # Path to store the captured image
 
-
-sound.speak('Hello! This is a streaming program. This will stream the photos to the ev3 screen.')
-
-# Function to capture an image using fswebcam
 def capture_image():
-    subprocess.call(['fswebcam', '-r', '160x120', '--no-banner', '/home/robot/image.jpeg'])
-
-# Function to display the image on the EV3 screen using mplayer
+    subprocess.run(['fswebcam', '-r', '160x120', '--no-banner', image_path])
 
 def display_image():
-    subprocess.call(['sudo', 'brickrun', '--', 'mplayer', '-vo', 'fbdev2:/dev/fb0', '-framedrop', '-nosound', '/home/robot/image.jpeg'])
+    subprocess.Popen(['fbi', '-noverbose', '-T', '1', image_path])
 
-# Run the image capture and display processes
-if __name__ == '__main__':
+while True:
     capture_image()
     display_image()
-
 
 #To Run this program, in the ssh do: sudo python3 /home/robot/ev3/ev3/tests/code/WebcamDisplay.py
 #Or whatever the path of the pthon program is
 # Ctrl+C --> Ctrl+Shift+V
 # sudo python3 /home/robot/ev3/ev3/tests/code/WebcamStream.py
+#brickrun -- mplayer -fps 15 -demuxer lavf -lavfdopts format=mjpeg -vo fbdev2:/dev/fb0 -quiet /home/robot/webcam.jpg
