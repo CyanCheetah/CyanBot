@@ -2,31 +2,25 @@ from ev3dev2.display import Display
 from ev3dev2 import ev3
 import subprocess
 
-# Create an instance of the EV3 screen
 screen = Display()
 
-# Execute the brickrun command and capture the output
 process = subprocess.Popen(
     ['brickrun', '--', 'mpg123', '-@', 'http://us3.streamingpulse.com:7015/live', '-b', '100000'],
     stdout=subprocess.PIPE,
     universal_newlines=True
 )
 
-# Loop through the output of the command
 for line in iter(process.stdout.readline, ''):
-    # Check if the line contains the station name
     if 'ICY-NAME' in line:
         station_name = line.split('ICY-NAME: ')[1].strip()
         screen.draw.text((10, 10), f"Station:"+station_name)
         screen.update()
 
-    # Check if the line contains the song name
     if 'ICY-META: StreamTitle' in line:
         song_name = line.split("StreamTitle='")[1].split("';")[0]
         screen.draw.text((10, 50), f"Song: {song_name}")
         screen.update()
 
-    # Check if the middle button is pressed
     if ev3.Button().middle:
         break
 
