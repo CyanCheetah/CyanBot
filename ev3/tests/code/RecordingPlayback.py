@@ -35,7 +35,7 @@ while True:
 if ts.wait_for_pressed():
     subprocess.run(['sudo', 'service', 'udev', 'restart'])
     sound.speak('Playing recorded audio!')
-    cmd = ['aplay', '-V', '100', '/home/robot/myvoice.wav']
+    cmd = ['aplay', '-V', '2000', '/home/robot/myvoice.wav']
 
     subprocess.Popen(cmd).wait()
 #sudo python3 /home/robot/ev3/ev3/tests/code/RecordingPlayback.py
@@ -43,6 +43,5 @@ if ts.wait_for_pressed():
 #brickrun -- mpg123 -@ http://icecast.omroep.nl/radio1-bb-mp3 -b 2048
 #brickrun -- mpg123 -@ http://us3.streamingpulse.com:7015/live -b 100000
 #brickrun -- mpg123 -@ https://rfcmedia.streamguys1.com/MusicPulse.mp3 -b 2048
-
 
 
