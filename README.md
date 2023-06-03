@@ -196,4 +196,4 @@ https://www.youtube.com/watch?v=qsX8IqXMkZ0&t=56s&ab_channel=CyanCheetah
 
 # Here is the PDF for the Docs for this program:
 
-[CyanBot python-ev3dev Documentation (1).pdf](https://github.com/CyanCheetah/CyanBot/files/11628821/CyanBot.python-ev3dev.Documentation.1.pdf)
+[CyanBot python-ev3dev Documentation.pdf](https://github.com/CyanCheetah/CyanBot/files/11628821/CyanBot.python-ev3dev.Documentation.1.pdf)
