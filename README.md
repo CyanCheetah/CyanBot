@@ -1,5 +1,7 @@
 # EV3-Webcam
 This is programming code for the Lego Mindstorms 31313 EV3 kit. Here I will show you how to properly install everything and run webcam software on the EV3 smoothly.
+
+Docs and Tips for this code: [CyanBot python-ev3dev Documentation (1).pdf](https://github.com/CyanCheetah/CyanBot/files/11628821/CyanBot.python-ev3dev.Documentation.1.pdf)
 # Table of Contents
 * [Installation Guide - EV3DEV](https://github.com/CyanCheetah/EV3-Webcam#installation-guide---ev3dev)
 * [Installation Guide - Visual Studio Code](https://github.com/CyanCheetah/EV3-Webcam#installation-guide---visual-studio-code)
